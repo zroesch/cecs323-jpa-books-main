@@ -17,9 +17,7 @@ import csulb.cecs323.model.*;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
-import javax.persistence.EntityTransaction;
 import javax.persistence.Persistence;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.logging.Logger;
 
@@ -32,7 +30,7 @@ import java.util.logging.Logger;
  *     Originally provided by Dr. Alvaro Monge of CSULB, and subsequently modified by Dave Brown.
  * </p>
  */
-public class Books {
+public class Main {
    /**
     * You will likely need the entityManager in a great many functions throughout your application.
     * Rather than make this a global variable, we will make it an instance variable within the CarClub
