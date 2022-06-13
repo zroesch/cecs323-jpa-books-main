@@ -1,0 +1,13 @@
+----------------------------------------------------------------
+Mon Jun 13 21:09:16 UTC 2022:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.15.2.0 - (1873585): instance a816c00e-0181-5ee6-3b01-000007604b88 
+on database directory /home/glibdig/Desktop/Studies/Summer 2022/CECS 323 - Database Fundamentals/JPA Project/cecs323-jpa-car-club-main/database with class loader jdk.internal.loader.ClassLoaders$AppClassLoader@5c29bfd 
+Loaded from file:/home/glibdig/.config/JetBrains/IntelliJIdea2022.1/jdbc-drivers/Apache%20Derby/10.15.2.0/derby-10.15.2.0.jar
+java.vendor=JetBrains s.r.o.
+java.runtime.version=11.0.15+10-b2043.56
+user.dir=/home/glibdig/Desktop/Studies/Summer 2022/CECS 323 - Database Fundamentals/JPA Project/cecs323-jpa-car-club-main
+os.name=Linux
+os.arch=amd64
+os.version=5.4.0-117-generic
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''
