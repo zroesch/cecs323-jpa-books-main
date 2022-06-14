@@ -30,7 +30,7 @@ import java.util.logging.Logger;
  *     Originally provided by Dr. Alvaro Monge of CSULB, and subsequently modified by Dave Brown.
  * </p>
  */
-public class Main {
+public class BookJPA {
    /**
     * You will likely need the entityManager in a great many functions throughout your application.
     * Rather than make this a global variable, we will make it an instance variable within the CarClub
@@ -52,7 +52,7 @@ public class Main {
     * for use later in the application.
     * @param manager    The EntityManager that we will use.
     */
-   public Books(EntityManager manager) {
+   public BookJPA(EntityManager manager) {
       this.entityManager = manager;
    }
 

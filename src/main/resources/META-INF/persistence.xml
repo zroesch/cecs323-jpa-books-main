@@ -2,7 +2,7 @@
 <persistence xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd"
 	version="2.0" xmlns="http://java.sun.com/xml/ns/persistence">
-	<persistence-unit name="Main" transaction-type="RESOURCE_LOCAL">
+	<persistence-unit name="BookJPA" transaction-type="RESOURCE_LOCAL">
 		<provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>  <!-- See: http://tomee.apache.org/jpa-concepts.html -->
 
 		<!-- By setting the following to false, any Java class defined in this project with a @Entity annotation -->
