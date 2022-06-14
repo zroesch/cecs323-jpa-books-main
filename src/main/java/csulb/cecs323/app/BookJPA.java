@@ -17,8 +17,11 @@ import csulb.cecs323.model.*;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
+import javax.persistence.EntityTransaction;
 import javax.persistence.Persistence;
+import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 import java.util.logging.Logger;
 
 /**
@@ -30,7 +33,7 @@ import java.util.logging.Logger;
  *     Originally provided by Dr. Alvaro Monge of CSULB, and subsequently modified by Dave Brown.
  * </p>
  */
-public class Main {
+public class BookJPA {
    /**
     * You will likely need the entityManager in a great many functions throughout your application.
     * Rather than make this a global variable, we will make it an instance variable within the CarClub
@@ -45,21 +48,46 @@ public class Main {
     * Here also, we want to make sure that the one Logger instance is readily available throughout the
     * application, without resorting to creating a global variable.
     */
-   private static final Logger LOGGER = Logger.getLogger(Books.class.getName());
+   private static final Logger LOGGER = Logger.getLogger(BookJPA.class.getName());
 
    /**
     * The constructor for the CarClub class.  All that it does is stash the provided EntityManager
     * for use later in the application.
     * @param manager    The EntityManager that we will use.
     */
-   public Books(EntityManager manager) {
+   public BookJPA(EntityManager manager) {
       this.entityManager = manager;
    }
 
    public static void main(String[] args) {
       LOGGER.fine("Creating EntityManagerFactory and EntityManager");
-      EntityManagerFactory factory = Persistence.createEntityManagerFactory("Books");
+      EntityManagerFactory factory = Persistence.createEntityManagerFactory("BookJPA");
       EntityManager manager = factory.createEntityManager();
+      // Create an instance of Book and store our new EntityManager as an instance variable.
+      BookJPA books = new BookJPA(manager);
+      LOGGER.fine("Begin of Transaction");
+      EntityTransaction tx = manager.getTransaction();
+
+      tx.begin();
+      List<AuthoringEntities> authorings = new ArrayList<>();
+      books.createEntity(authorings);
+
+      List<IndividualAuthors> idvAuthors = new ArrayList<>();
+      books.createEntity(idvAuthors);
+
+      List<WritingGroups> writingGrp = new ArrayList<>();
+      books.createEntity(writingGrp);
+
+      List<AdHocTeams> adHocTeams = new ArrayList<>();
+      books.createEntity(adHocTeams);
+
+      List<AdHocTeamMembers> adHocMems = new ArrayList<>();
+
+      books.createEntity(adHocMems);
+
+      books.prompts();
+      tx.commit();
+
       // Create an instance of CarClub and store our new EntityManager as an instance variable.
 //      Books carclub = new Books(manager);
 //
@@ -86,6 +114,82 @@ public class Main {
       LOGGER.fine("End of Transaction");
 
    } // End of the main method
+
+   public void prompts() {
+      System.out.println("1. Add new objects");
+      System.out.println("2. List all the information about a specific Object:");
+      System.out.println("3. Delete a book");
+      System.out.println("4. Update a book");
+      System.out.println("5. List the the primary key of all rows of: ");
+
+      Scanner input = new Scanner(System.in);
+      int choice = Integer.parseInt(input.next());
+      int subChoice = 0;
+      switch (choice) {
+         case 1: {
+            System.out.println("1. Add a Writing Group");
+            System.out.println("2. Add an Individual Author");
+            System.out.println("3. Add an Ad Hoc Team");
+            subChoice = Integer.parseInt(input.next());
+            switch (subChoice) {
+               case 1:
+                  break;
+               case 2:
+                  break;
+               case 3:
+                  break;
+            }
+            break;
+         }
+
+         case 2: {
+            System.out.println("Add a Writing Group");
+            System.out.println("Add an Individual Author");
+            System.out.println("Add an Ad Hoc Team");
+            subChoice = Integer.parseInt(input.next());
+            switch (subChoice) {
+               case 1:
+                  break;
+               case 2:
+                  break;
+               case 3:
+                  break;
+
+            }
+            break;
+         }
+
+         case 3: {
+            System.out.println("Please enter the candidate keys in order to delete a book ");
+            // check for candidate keys
+
+
+         }
+         break;
+
+         case 4: {
+            System.out.println("Change the book's authoring entities: ");
+         }
+         break;
+
+         case 5: {
+            System.out.println("Show primary key for Publishers");
+            System.out.println("Show primary key for Books");
+            System.out.println("Show primary key for Authoring Entities");
+            subChoice = Integer.parseInt(input.next());
+            switch (subChoice) {
+               case 1:
+                  break;
+               case 2:
+                  break;
+               case 3:
+                  break;
+            }
+            break;
+         }
+      }
+}
+
 
    /**
     * Create and persist a list of objects to the database.
