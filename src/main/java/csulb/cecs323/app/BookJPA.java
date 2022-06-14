@@ -17,6 +17,7 @@ import csulb.cecs323.model.*;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
+import javax.persistence.EntityTransaction;
 import javax.persistence.Persistence;
 import java.util.List;
 import java.util.logging.Logger;
@@ -58,19 +59,24 @@ public class BookJPA {
 
    public static void main(String[] args) {
       LOGGER.fine("Creating EntityManagerFactory and EntityManager");
-      EntityManagerFactory factory = Persistence.createEntityManagerFactory("Books");
+      EntityManagerFactory factory = Persistence.createEntityManagerFactory("BookJPA");
       EntityManager manager = factory.createEntityManager();
       // Create an instance of CarClub and store our new EntityManager as an instance variable.
-//      Books carclub = new Books(manager);
-//
-//
-//      // Any changes to the database need to be done within a transaction.
-//      // See: https://en.wikibooks.org/wiki/Java_Persistence/Transactions
-//
-//      LOGGER.fine("Begin of Transaction");
-//      EntityTransaction tx = manager.getTransaction();
-//
-//      tx.begin();
+      BookJPA bookjpa = new BookJPA(manager);
+
+
+      // Any changes to the database need to be done within a transaction.
+      // See: https://en.wikibooks.org/wiki/Java_Persistence/Transactions
+
+
+
+      LOGGER.fine("Begin of Transaction");
+      EntityTransaction tx = manager.getTransaction();
+
+      tx.begin();
+
+
+
 //      // List of owners that I want to persist.  I could just as easily done this with the seed-data.sql
 //      List <Owners> owners = new ArrayList<Owners>();
 //      // Load up my List with the Entities that I want to persist.  Note, this does not put them
@@ -83,9 +89,15 @@ public class BookJPA {
 //
 //      // Commit the changes so that the new data persists and is visible to other users.
 //      tx.commit();
-      LOGGER.fine("End of Transaction");
+//
+//
+//      LOGGER.fine("End of Transaction");
 
    } // End of the main method
+
+
+
+
 
    /**
     * Create and persist a list of objects to the database.
@@ -107,4 +119,6 @@ public class BookJPA {
          LOGGER.info("Persisted object after flush (non-null id): " + next);
       }
    } // End of createEntity member method
+
+
 }// End of the getStyle method

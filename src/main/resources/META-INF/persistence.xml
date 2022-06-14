@@ -19,7 +19,7 @@
 
             <!-- TODO: Change the path to the database to one that is local to your computer! -->
 			<!-- The value provided is relative to this project's top-level location -->
-			<property name="javax.persistence.jdbc.url" value="jdbc:derby:database/;create=true" />
+			<property name="javax.persistence.jdbc.url" value="jdbc:derby:database;create=true" />
 			<property name="javax.persistence.jdbc.user" value="app" /> <!-- change to appropriate username -->
 			<property name="javax.persistence.jdbc.password" value="app" /> <!-- change to appropriate password -->
 
