@@ -89,9 +89,10 @@ public class BookJPA {
       publishers.add(new Publishers("Penguine House Publisher", "714-666-777", "penguinepublisher@gmail.com"));
       books.createEntity((publishers));
 
-      List<Books> bookList = new ArrayList<>();
-      bookList.add(new Books(publishers.get(0), authorings.get(0), 804-83-15541-16-5,"The Grapes of Wrath",1912));
-      books.createEntity(bookList);
+      List<Books> bookPhys = new ArrayList<>();
+      bookPhys.add(new Books(publishers.get(0),authorings.get(0),123456, "Winnie", 1928));
+      books.createEntity(bookPhys);
+      tx.commit();
 
       System.out.println("Searching for a non-existing book");
       boolean test1 = books.existingBook("error", "wrong", "wrong");
