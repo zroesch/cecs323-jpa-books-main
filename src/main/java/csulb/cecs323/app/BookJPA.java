@@ -88,7 +88,7 @@ public class BookJPA {
         books.createEntity(adHocMems);
 
         List<Publishers> publishers = new ArrayList<>();
-        publishers.add(new Publishers("Penguine House Publisher", "714-666-777", "penguinepublisher@gmail.com"));
+        publishers.add(new Publishers("Penguin House Publisher", "714-666-777", "penguinepublisher@gmail.com"));
         books.createEntity((publishers));
         tx.commit();
 
@@ -103,6 +103,7 @@ public class BookJPA {
         int choice = Integer.parseInt(input.next());
         int subChoice = 0;
         switch (choice) {
+            //Adding new Objects
             case 1: {
                 tx.begin();
                 String name;
@@ -112,20 +113,35 @@ public class BookJPA {
                 System.out.println("2. Add an Individual Author");
                 System.out.println("3. Add an Ad Hoc Team");
                 subChoice = Integer.parseInt(input.next());
+
                 switch (subChoice) {
                     case 1:
-                        System.out.println("Enter authoring entity name:");
+                        System.out.println("Enter Writing Group name:");
                         name = getUserString();
-                        System.out.println("Enter authoring entity email:");
+                        System.out.println("Enter Writing Group email:");
                         email = getUserString();
-                        tx.commit();
-
+                        System.out.println("Enter the name of the head writer.");
+                        String headWriter = getUserString();
+                        System.out.println ("Enter the year the writing group was formed:");
+                        int yearFormed = Integer.parseInt(getUserString());
+                        authorings.add(new WritingGroups(name, email, headWriter, yearFormed));
                         break;
                     case 2:
+                        System.out.println("Enter individual author name:");
+                        name = getUserString();
+                        System.out.println("Enter individual author email:");
+                        email = getUserString();
+                        authorings.add(new IndividualAuthors(name, email));
                         break;
                     case 3:
+                        System.out.println("Enter Ad Hoc Team name:");
+                        name = getUserString();
+                        System.out.println("Enter Ad Hoc Team email:");
+                        email = getUserString();
+                        authorings.add(new AdHocTeams(name, email));
                         break;
                 }
+                tx.commit();
                 break;
             }
 
