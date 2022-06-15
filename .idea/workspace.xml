@@ -128,7 +128,7 @@
       <workItem from="1655157863193" duration="3102000" />
       <workItem from="1655170889544" duration="437000" />
       <workItem from="1655178880933" duration="4290000" />
-      <workItem from="1655230719583" duration="16246000" />
+      <workItem from="1655230719583" duration="17252000" />
     </task>
     <task id="LOCAL-00001" summary="Changed models back to model, and adjusted imports.&#10;In Main, the constructor of Books(The old name of the class)  was not renamed to Main">
       <created>1655179468187</created>
