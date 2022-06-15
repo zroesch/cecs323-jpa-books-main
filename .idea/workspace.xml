@@ -4,21 +4,88 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3ddc484b-3708-4629-8c8c-39301ac2fa97" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="3ddc484b-3708-4629-8c8c-39301ac2fa97" name="Changes" comment="Changed models back to model, and adjusted imports.&#10;In Main, the constructor of Books(The old name of the class)  was not renamed to Main">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/716debcc-6cfa-4e65-9d43-31efdf46af03.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/716debcc-6cfa-4e65-9d43-31efdf46af03/storage_v2/_src_/schema/SYS.rUIBAA.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/716debcc-6cfa-4e65-9d43-31efdf46af03/storage_v2/_src_/schema/SYSCS_UTIL.JC_i2A.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/716debcc-6cfa-4e65-9d43-31efdf46af03/storage_v2/_src_/schema/SYSIBM.hzyvkg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/db.lck" beforeDir="false" afterPath="$PROJECT_DIR$/database/db.lck" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/log/log.ctrl" beforeDir="false" afterPath="$PROJECT_DIR$/database/log/log.ctrl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/log/log1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/database/log/log1.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/log/logmirror.ctrl" beforeDir="false" afterPath="$PROJECT_DIR$/database/log/logmirror.ctrl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seg0/c101.dat" beforeDir="false" afterPath="$PROJECT_DIR$/database/seg0/c101.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seg0/c111.dat" beforeDir="false" afterPath="$PROJECT_DIR$/database/seg0/c111.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seg0/c121.dat" beforeDir="false" afterPath="$PROJECT_DIR$/database/seg0/c121.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seg0/c130.dat" beforeDir="false" afterPath="$PROJECT_DIR$/database/seg0/c130.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seg0/c141.dat" beforeDir="false" afterPath="$PROJECT_DIR$/database/seg0/c141.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seg0/c150.dat" beforeDir="false" afterPath="$PROJECT_DIR$/database/seg0/c150.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seg0/c161.dat" beforeDir="false" afterPath="$PROJECT_DIR$/database/seg0/c161.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seg0/c171.dat" beforeDir="false" afterPath="$PROJECT_DIR$/database/seg0/c171.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seg0/c20.dat" beforeDir="false" afterPath="$PROJECT_DIR$/database/seg0/c20.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seg0/c200.dat" beforeDir="false" afterPath="$PROJECT_DIR$/database/seg0/c200.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seg0/c211.dat" beforeDir="false" afterPath="$PROJECT_DIR$/database/seg0/c211.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seg0/c221.dat" beforeDir="false" afterPath="$PROJECT_DIR$/database/seg0/c221.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seg0/c230.dat" beforeDir="false" afterPath="$PROJECT_DIR$/database/seg0/c230.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seg0/c31.dat" beforeDir="false" afterPath="$PROJECT_DIR$/database/seg0/c31.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seg0/c41.dat" beforeDir="false" afterPath="$PROJECT_DIR$/database/seg0/c41.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seg0/c51.dat" beforeDir="false" afterPath="$PROJECT_DIR$/database/seg0/c51.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seg0/c60.dat" beforeDir="false" afterPath="$PROJECT_DIR$/database/seg0/c60.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seg0/c71.dat" beforeDir="false" afterPath="$PROJECT_DIR$/database/seg0/c71.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seg0/c81.dat" beforeDir="false" afterPath="$PROJECT_DIR$/database/seg0/c81.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seg0/c90.dat" beforeDir="false" afterPath="$PROJECT_DIR$/database/seg0/c90.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seg0/ca1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/database/seg0/ca1.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seg0/cb1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/database/seg0/cb1.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seg0/cf0.dat" beforeDir="false" afterPath="$PROJECT_DIR$/database/seg0/cf0.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/derby.log" beforeDir="false" afterPath="$PROJECT_DIR$/derby.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/csulb/cecs323/app/BookJPA.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/csulb/cecs323/app/BookJPA.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/sql/seed-data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/sql/seed-data.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="DatabaseLocalColorSettings">
-    <colors>
-      <entry key="716debcc-6cfa-4e65-9d43-31efdf46af03" value="Gray" />
-    </colors>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
+    <excluded-from-favorite>
+      <branch-storage>
+        <map>
+          <entry type="REMOTE">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="origin/master" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </excluded-from-favorite>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JpbToolWindowState">
+    <option name="myId2FirstActivated">
+      <map>
+        <entry key="com.haulmont.jpb.jpaInspector" value="true" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="true" />
+        <entry key="com.haulmont.jpb.jpaStructure" value="true" />
+      </map>
+    </option>
+    <option name="myId2Visible">
+      <map>
+        <entry key="com.haulmont.jpb.jpaInspector" value="false" />
+        <entry key="com.haulmont.jpb.jpaPalette" value="false" />
+        <entry key="com.haulmont.jpb.jpaStructure" value="false" />
+      </map>
+    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -42,6 +109,10 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "last_opened_file_path": "/home/glibdig/Desktop/Studies/Summer 2022/CECS 323 - Database Fundamentals/JPA Project/cecs323-jpa-car-club-main/pom.xml",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "advanced.settings"
   },
@@ -52,6 +123,19 @@
   }
 }]]></component>
   <component name="RunManager">
+    <configuration name="BookJPA" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="csulb.cecs323.app.BookJPA" />
+      <module name="cecs323-jpa-books-main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="csulb.cecs323.app.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <module name="cecs323-jpa-Books" />
       <method v="2">
@@ -65,6 +149,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.BookJPA" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -78,7 +167,19 @@
       <workItem from="1655154658244" duration="294000" />
       <workItem from="1655155010194" duration="255000" />
       <workItem from="1655155294231" duration="139000" />
+      <workItem from="1655157863193" duration="3102000" />
+      <workItem from="1655170889544" duration="437000" />
+      <workItem from="1655178880933" duration="4290000" />
+      <workItem from="1655230719583" duration="12466000" />
     </task>
+    <task id="LOCAL-00001" summary="Changed models back to model, and adjusted imports.&#10;In Main, the constructor of Books(The old name of the class)  was not renamed to Main">
+      <created>1655179468187</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1655179468187</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -89,10 +190,26 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Changed models back to model, and adjusted imports.&#10;In Main, the constructor of Books(The old name of the class)  was not renamed to Main" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changed models back to model, and adjusted imports.&#10;In Main, the constructor of Books(The old name of the class)  was not renamed to Main" />
   </component>
 </project>

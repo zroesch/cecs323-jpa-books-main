@@ -62,7 +62,7 @@
 				<configuration>
 					<archive>
 						<manifest>
-							<mainClass>csulb.cecs323.app.Books</mainClass>
+							<mainClass>csulb.cecs323.app.BookJPA</mainClass>
 						</manifest>
 					</archive>
 				</configuration>
