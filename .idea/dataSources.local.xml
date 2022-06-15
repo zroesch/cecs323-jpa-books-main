@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="dataSourceStorageLocal" created-in="IU-221.5787.30">
-    <data-source name="BookJPA" uuid="b09135cb-9bfa-421b-ac29-6cf1507d352f">
-      <database-info product="Apache Derby" version="10.15.2.0 - (1873585)" jdbc-version="4.2" driver-name="Apache Derby Embedded JDBC Driver" driver-version="10.15.2.0 - (1873585)" dbms="DERBY" exact-version="10.15.2.0" exact-driver-version="10.15">
+    <data-source name="BookJPA" uuid="27306b78-16b1-49ff-93eb-d684812553b4">
+      <database-info product="Apache Derby" version="10.14.1.0 - (1808820)" jdbc-version="4.2" driver-name="Apache Derby Embedded JDBC Driver" driver-version="10.14.1.0 - (1808820)" dbms="DERBY" exact-version="10.14.1.0" exact-driver-version="10.14">
         <identifier-quote-string>&quot;</identifier-quote-string>
       </database-info>
       <case-sensitivity plain-identifiers="upper" quoted-identifiers="exact" />

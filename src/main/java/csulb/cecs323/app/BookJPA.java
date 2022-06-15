@@ -15,10 +15,7 @@ package csulb.cecs323.app;
 // Import all of the entity classes that we have written for this application.
 import csulb.cecs323.model.*;
 
-import javax.persistence.EntityManager;
-import javax.persistence.EntityManagerFactory;
-import javax.persistence.EntityTransaction;
-import javax.persistence.Persistence;
+import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -70,6 +67,7 @@ public class BookJPA {
       EntityTransaction tx = manager.getTransaction();
       tx.begin();
 
+
       List<AuthoringEntities> authorings = new ArrayList<>();
       authorings.add(new AuthoringEntities("Anne Frank", "annefrank@gmail.com", "Individual Author"));
       authorings.add(new AuthoringEntities("Susan Cain", "susancain@gmail.com", "Individual Author"));
@@ -95,29 +93,7 @@ public class BookJPA {
       //books.prompts();
       tx.commit();
 
-      // Create an instance of CarClub and store our new EntityManager as an instance variable.
-//      Books carclub = new Books(manager);
-//
-//
-//      // Any changes to the database need to be done within a transaction.
-//      // See: https://en.wikibooks.org/wiki/Java_Persistence/Transactions
-//
-//      LOGGER.fine("Begin of Transaction");
-//      EntityTransaction tx = manager.getTransaction();
-//
-//      tx.begin();
-//      // List of owners that I want to persist.  I could just as easily done this with the seed-data.sql
-//      List <Owners> owners = new ArrayList<Owners>();
-//      // Load up my List with the Entities that I want to persist.  Note, this does not put them
-//      // into the database.
-//      owners.add(new Owners("Reese", "Mike", "714-892-5544"));
-//      owners.add(new Owners("Leck", "Carl", "714-321-3729"));
-//      owners.add(new Owners("Guitierez", "Luis", "562-982-2899"));
-//      // Create the list of owners in the database.
-//      carclub.createEntity (owners);
-//
-//      // Commit the changes so that the new data persists and is visible to other users.
-//      tx.commit();
+
       LOGGER.fine("End of Transaction");
 
    } // End of the main method
@@ -167,8 +143,13 @@ public class BookJPA {
          }
 
          case 3: {
-            System.out.println("Please enter the candidate keys in order to delete a book ");
-            // check for candidate keys
+            System.out.println("Please enter the publisher name, author name, and title of the book to be deleted");
+            // check for candidate keys (publisher_name, author_name, title)
+            String publisherName = input.nextLine();
+            String authorName = input.nextLine();
+            String bookTitle = input.nextLine();
+            if(existingBook(publisherName, authorName, bookTitle) == true)
+               System.out.println(bookTitle + " by " + authorName + " was removed from the database");
 
 
          }
@@ -197,6 +178,27 @@ public class BookJPA {
       }
 }
 
+   public Boolean existingBook(String publisher, String author, String bookTitle) {
+      try{
+         Query query = entityManager.createQuery("Select b from Books b JOIN b.publishers p JOIN b.entities e where" +
+                 " p.name = :publisherName And e.name = :author And b.title = :title");
+         query.setParameter("publisherName", publisher);
+         query.setParameter("author", author);
+         query.setParameter("title", bookTitle);
+         Books book = (Books) query.getSingleResult();
+         deleteBook(book);
+         return true;
+      }
+      catch(NoResultException e)
+      {
+         return false;
+      }
+   }
+
+   public void deleteBook(Books book)
+   {
+      entityManager.remove(book);
+   }
 
    /**
     * Create and persist a list of objects to the database.
