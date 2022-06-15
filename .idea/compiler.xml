@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="cecs323-jpa-Books" />
         <module name="cecs323-jpa-books-main" />
+        <module name="cecs323-jpa-CarClub" />
       </profile>
     </annotationProcessing>
   </component>
