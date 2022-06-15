@@ -65,12 +65,16 @@ public class BookJPA {
       EntityManager manager = factory.createEntityManager();
       // Create an instance of Book and store our new EntityManager as an instance variable.
       BookJPA books = new BookJPA(manager);
+
       LOGGER.fine("Begin of Transaction");
       EntityTransaction tx = manager.getTransaction();
-
       tx.begin();
+
       List<AuthoringEntities> authorings = new ArrayList<>();
+      authorings.add(new AuthoringEntities("Anne Frank", "annefrank@gmail.com", "Individual Author"));
+      authorings.add(new AuthoringEntities("Susan Cain", "susancain@gmail.com", "Individual Author"));
       books.createEntity(authorings);
+
 
       List<IndividualAuthors> idvAuthors = new ArrayList<>();
       books.createEntity(idvAuthors);
@@ -82,10 +86,13 @@ public class BookJPA {
       books.createEntity(adHocTeams);
 
       List<AdHocTeamMembers> adHocMems = new ArrayList<>();
-
       books.createEntity(adHocMems);
 
-      books.prompts();
+      List<Publishers> publishers = new ArrayList<>();
+      publishers.add(new Publishers("Penguine House Publisher", "714-666-777", "penguinepublisher@gmail.com"));
+      books.createEntity((publishers));
+
+      //books.prompts();
       tx.commit();
 
       // Create an instance of CarClub and store our new EntityManager as an instance variable.
@@ -212,3 +219,4 @@ public class BookJPA {
       }
    } // End of createEntity member method
 }// End of the getStyle method
+
