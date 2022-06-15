@@ -73,7 +73,6 @@ public class BookJPA {
       authorings.add(new AuthoringEntities("Susan Cain", "susancain@gmail.com", "Individual Author"));
       books.createEntity(authorings);
 
-
       List<IndividualAuthors> idvAuthors = new ArrayList<>();
       books.createEntity(idvAuthors);
 
@@ -89,6 +88,17 @@ public class BookJPA {
       List<Publishers> publishers = new ArrayList<>();
       publishers.add(new Publishers("Penguine House Publisher", "714-666-777", "penguinepublisher@gmail.com"));
       books.createEntity((publishers));
+
+      List<Books> bookList = new ArrayList<>();
+      bookList.add(new Books(publishers.get(0), authorings.get(0), 804-83-15541-16-5,"The Grapes of Wrath",1912));
+      books.createEntity(bookList);
+
+      System.out.println("Searching for a non-existing book");
+      boolean test1 = books.existingBook("error", "wrong", "wrong");
+
+      System.out.println("Searching for an existing book");
+      boolean test2 = books.existingBook("Penguine House Publisher", "Anne Frank",
+              "The Grapes of Wrath");
 
       //books.prompts();
       tx.commit();
@@ -145,13 +155,19 @@ public class BookJPA {
          case 3: {
             System.out.println("Please enter the publisher name, author name, and title of the book to be deleted");
             // check for candidate keys (publisher_name, author_name, title)
-            String publisherName = input.nextLine();
-            String authorName = input.nextLine();
-            String bookTitle = input.nextLine();
-            if(existingBook(publisherName, authorName, bookTitle) == true)
-               System.out.println(bookTitle + " by " + authorName + " was removed from the database");
-
-
+            boolean done = false;
+            while(!done)
+            {
+               String publisherName = input.nextLine();
+               String authorName = input.nextLine();
+               String bookTitle = input.nextLine();
+               if(existingBook(publisherName, authorName, bookTitle) == true)
+               {
+                  System.out.println(bookTitle + " by " + authorName + " was removed from the database");
+                  done = true;
+               }
+               else System.out.println("Please try again.");
+            }
          }
          break;
 
@@ -191,6 +207,7 @@ public class BookJPA {
       }
       catch(NoResultException e)
       {
+         System.out.println("No book with the information given exist");
          return false;
       }
    }

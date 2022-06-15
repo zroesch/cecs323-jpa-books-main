@@ -1,10 +1,10 @@
 ----------------------------------------------------------------
-Wed Jun 15 00:12:03 PDT 2022:
-Booting Derby version The Apache Software Foundation - Apache Derby - 10.14.2.0 - (1828579): instance a816c00e-0181-6634-77cd-000005f5f118 
-on database directory /home/glibdig/Desktop/Studies/Summer 2022/CECS 323 - Database Fundamentals/JPA Project/cecs323-jpa-books-main/database/BookJPA with class loader jdk.internal.loader.ClassLoaders$AppClassLoader@251a69d7 
-Loaded from file:/home/glibdig/.m2/repository/org/apache/derby/derby/10.14.2.0/derby-10.14.2.0.jar
-java.vendor=Oracle Corporation
-java.runtime.version=18.0.1.1+2-6
+Wed Jun 15 09:11:37 UTC 2022:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.14.1.0 - (1808820): instance a816c00e-0181-66a1-ec18-000007700000 
+on database directory /home/glibdig/Desktop/Studies/Summer 2022/CECS 323 - Database Fundamentals/JPA Project/cecs323-jpa-books-main/database/BookJPA with class loader jdk.internal.loader.ClassLoaders$AppClassLoader@5c29bfd 
+Loaded from file:/home/glibdig/.config/JetBrains/IntelliJIdea2022.1/jdbc-drivers/Apache%20Derby/10.14.1.0/derby-10.14.1.0.jar
+java.vendor=JetBrains s.r.o.
+java.runtime.version=11.0.15+10-b2043.56
 user.dir=/home/glibdig/Desktop/Studies/Summer 2022/CECS 323 - Database Fundamentals/JPA Project/cecs323-jpa-books-main
 os.name=Linux
 os.arch=amd64
