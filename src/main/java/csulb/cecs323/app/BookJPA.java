@@ -74,6 +74,25 @@ public class BookJPA {
         authorings.add(new AuthoringEntities("Anne Frank", "annefrank@gmail.com", "Individual Author"));
         authorings.add(new AuthoringEntities("Susan Cain", "susancain@gmail.com", "Individual Author"));
         books.createEntity(authorings);
+
+        List<IndividualAuthors> idvAuthors = new ArrayList<>();
+        books.createEntity(idvAuthors);
+
+        List<WritingGroups> writingGrp = new ArrayList<>();
+        books.createEntity(writingGrp);
+
+        List<AdHocTeams> adHocTeams = new ArrayList<>();
+        books.createEntity(adHocTeams);
+
+        List<AdHocTeamMembers> adHocMems = new ArrayList<>();
+        books.createEntity(adHocMems);
+
+        List<Publishers> publishers = new ArrayList<>();
+        publishers.add(new Publishers("Penguine House Publisher", "714-666-777", "penguinepublisher@gmail.com"));
+        books.createEntity((publishers));
+        tx.commit();
+
+        //Prompt Menu
         System.out.println("1. Add new objects");
         System.out.println("2. List all the information about a specific Object:");
         System.out.println("3. Delete a book");
@@ -99,7 +118,7 @@ public class BookJPA {
                         name = getUserString();
                         System.out.println("Enter authoring entity email:");
                         email = getUserString();
-
+                        tx.commit();
 
                         break;
                     case 2:
@@ -158,24 +177,8 @@ public class BookJPA {
             }
         }
 
-        List<IndividualAuthors> idvAuthors = new ArrayList<>();
-        books.createEntity(idvAuthors);
-
-        List<WritingGroups> writingGrp = new ArrayList<>();
-        books.createEntity(writingGrp);
-
-        List<AdHocTeams> adHocTeams = new ArrayList<>();
-        books.createEntity(adHocTeams);
-
-        List<AdHocTeamMembers> adHocMems = new ArrayList<>();
-        books.createEntity(adHocMems);
-
-        List<Publishers> publishers = new ArrayList<>();
-        publishers.add(new Publishers("Penguine House Publisher", "714-666-777", "penguinepublisher@gmail.com"));
-        books.createEntity((publishers));
 
         //books.prompts();
-        tx.commit();
 
         // Create an instance of CarClub and store our new EntityManager as an instance variable.
 //      Books carclub = new Books(manager);
