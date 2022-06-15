@@ -6,40 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="3ddc484b-3708-4629-8c8c-39301ac2fa97" name="Changes" comment="Changed models back to model, and adjusted imports.&#10;In Main, the constructor of Books(The old name of the class)  was not renamed to Main">
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/716debcc-6cfa-4e65-9d43-31efdf46af03.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/716debcc-6cfa-4e65-9d43-31efdf46af03/storage_v2/_src_/schema/SYS.rUIBAA.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/716debcc-6cfa-4e65-9d43-31efdf46af03/storage_v2/_src_/schema/SYSCS_UTIL.JC_i2A.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/716debcc-6cfa-4e65-9d43-31efdf46af03/storage_v2/_src_/schema/SYSIBM.hzyvkg.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/db.lck" beforeDir="false" afterPath="$PROJECT_DIR$/database/db.lck" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/log/log.ctrl" beforeDir="false" afterPath="$PROJECT_DIR$/database/log/log.ctrl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/log/log1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/database/log/log1.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/log/logmirror.ctrl" beforeDir="false" afterPath="$PROJECT_DIR$/database/log/logmirror.ctrl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seg0/c101.dat" beforeDir="false" afterPath="$PROJECT_DIR$/database/seg0/c101.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seg0/c111.dat" beforeDir="false" afterPath="$PROJECT_DIR$/database/seg0/c111.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seg0/c121.dat" beforeDir="false" afterPath="$PROJECT_DIR$/database/seg0/c121.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seg0/c130.dat" beforeDir="false" afterPath="$PROJECT_DIR$/database/seg0/c130.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seg0/c141.dat" beforeDir="false" afterPath="$PROJECT_DIR$/database/seg0/c141.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seg0/c150.dat" beforeDir="false" afterPath="$PROJECT_DIR$/database/seg0/c150.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seg0/c161.dat" beforeDir="false" afterPath="$PROJECT_DIR$/database/seg0/c161.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seg0/c171.dat" beforeDir="false" afterPath="$PROJECT_DIR$/database/seg0/c171.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seg0/c20.dat" beforeDir="false" afterPath="$PROJECT_DIR$/database/seg0/c20.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seg0/c200.dat" beforeDir="false" afterPath="$PROJECT_DIR$/database/seg0/c200.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seg0/c211.dat" beforeDir="false" afterPath="$PROJECT_DIR$/database/seg0/c211.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seg0/c221.dat" beforeDir="false" afterPath="$PROJECT_DIR$/database/seg0/c221.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seg0/c230.dat" beforeDir="false" afterPath="$PROJECT_DIR$/database/seg0/c230.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seg0/c31.dat" beforeDir="false" afterPath="$PROJECT_DIR$/database/seg0/c31.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seg0/c41.dat" beforeDir="false" afterPath="$PROJECT_DIR$/database/seg0/c41.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seg0/c51.dat" beforeDir="false" afterPath="$PROJECT_DIR$/database/seg0/c51.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seg0/c60.dat" beforeDir="false" afterPath="$PROJECT_DIR$/database/seg0/c60.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seg0/c71.dat" beforeDir="false" afterPath="$PROJECT_DIR$/database/seg0/c71.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seg0/c81.dat" beforeDir="false" afterPath="$PROJECT_DIR$/database/seg0/c81.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seg0/c90.dat" beforeDir="false" afterPath="$PROJECT_DIR$/database/seg0/c90.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seg0/ca1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/database/seg0/ca1.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seg0/cb1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/database/seg0/cb1.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seg0/cf0.dat" beforeDir="false" afterPath="$PROJECT_DIR$/database/seg0/cf0.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/derby.log" beforeDir="false" afterPath="$PROJECT_DIR$/derby.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/csulb/cecs323/model/AuthoringEntities.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/csulb/cecs323/model/AuthoringEntities.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/csulb/cecs323/app/BookJPA.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/csulb/cecs323/app/BookJPA.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -173,7 +142,7 @@
       <workItem from="1655157863193" duration="3102000" />
       <workItem from="1655170889544" duration="437000" />
       <workItem from="1655178880933" duration="4290000" />
-      <workItem from="1655230719583" duration="16246000" />
+      <workItem from="1655230719583" duration="17252000" />
     </task>
     <task id="LOCAL-00001" summary="Changed models back to model, and adjusted imports.&#10;In Main, the constructor of Books(The old name of the class)  was not renamed to Main">
       <created>1655179468187</created>
