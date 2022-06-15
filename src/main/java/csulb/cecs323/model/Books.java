@@ -41,7 +41,7 @@ public class Books {
     public Books() { }
 
     // Constructor creating book with a publisher, some type of author, title, and the year it was published
-    public Books(Publishers publishers, csulb.cecs323.model.AuthoringEntities entities, int isbn, String title, int yearPublished) {
+    public Books(Publishers publishers, AuthoringEntities entities, int isbn, String title, int yearPublished) {
         this.publishers = publishers;
         this.entities = entities;
         this.isbn = isbn;

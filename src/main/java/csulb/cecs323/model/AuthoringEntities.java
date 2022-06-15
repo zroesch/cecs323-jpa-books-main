@@ -76,4 +76,8 @@ public class AuthoringEntities {
     public void setAuthoringEntityType(String authoringEntityType) {
         this.authoringEntityType = authoringEntityType;
     }
+
+    public String toString(){
+        return "Author Name: " + this.getName() + " Email: " + this.getEmail() + " EntityType: " + this.getAuthoringEntityType() + " Books: " + this.getBooks();
+    }
 }
