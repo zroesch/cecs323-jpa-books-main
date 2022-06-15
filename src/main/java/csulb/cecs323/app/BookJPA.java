@@ -147,12 +147,27 @@ public class BookJPA {
                 subChoice = Integer.parseInt(input.next());
                 switch (subChoice) {
                     case 1:
-
+                        List<Publishers> publishersKeys= manager.createQuery("SELECT p FROM Publishers p", Publishers.class).getResultList();
+                        for(int i = 0; i < publishersKeys.size(); i++)
+                        {
+                            System.out.println("Publisher's name " + publishersKeys.get(i).getName());
+                        }
                         break;
                     case 2:
+                        List<Books> booksKeys= manager.createQuery("SELECT b FROM Books b", Books.class).getResultList();
+                        for(int i = 0; i < booksKeys.size(); i++)
+                        {
+                            System.out.println("Title" + booksKeys.get(i).getTitle() + ", ISBN: " + booksKeys.get(i).getIsbn());
+                        }
                         break;
-                    case 3:
-                        break;
+                    case 3: {
+                        List<AuthoringEntities> authoringKeys= manager.createQuery("SELECT ent FROM AuthoringEntities ent", AuthoringEntities.class).getResultList();
+                        for(int i = 0; i < authoringKeys.size(); i++)
+                        {
+                            System.out.println("Authoring Entities Email " + authoringKeys.get(i).getEmail());
+                        }
+                    }
+                    break;
                 }
                 break;
             }
