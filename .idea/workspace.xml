@@ -39,9 +39,7 @@
       <change beforePath="$PROJECT_DIR$/database/seg0/cb1.dat" beforeDir="false" afterPath="$PROJECT_DIR$/database/seg0/cb1.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/seg0/cf0.dat" beforeDir="false" afterPath="$PROJECT_DIR$/database/seg0/cf0.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/derby.log" beforeDir="false" afterPath="$PROJECT_DIR$/derby.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/csulb/cecs323/app/BookJPA.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/csulb/cecs323/app/BookJPA.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/persistence.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/sql/seed-data.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/sql/seed-data.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/csulb/cecs323/model/AuthoringEntities.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/csulb/cecs323/model/AuthoringEntities.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,6 +67,11 @@
         </map>
       </branch-storage>
     </excluded-from-favorite>
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="tram_edits" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="JpbToolWindowState">
@@ -170,7 +173,7 @@
       <workItem from="1655157863193" duration="3102000" />
       <workItem from="1655170889544" duration="437000" />
       <workItem from="1655178880933" duration="4290000" />
-      <workItem from="1655230719583" duration="12466000" />
+      <workItem from="1655230719583" duration="16246000" />
     </task>
     <task id="LOCAL-00001" summary="Changed models back to model, and adjusted imports.&#10;In Main, the constructor of Books(The old name of the class)  was not renamed to Main">
       <created>1655179468187</created>
